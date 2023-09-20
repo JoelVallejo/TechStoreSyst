@@ -1,5 +1,5 @@
 ---
-import Header from '../components/Header.astro';
+import Header from "../components/Header.astro";
 
 interface Props {
   title: string;
@@ -20,7 +20,7 @@ const { title } = Astro.props;
   </head>
   <body class="min-h-screen pd-32">
     <Header />
-    <main class="max-w-5xl px-4 m-auto ">
+    <main class="max-w-5xl px-4 m-auto">
       <slot />
     </main>
   </body>
@@ -28,9 +28,9 @@ const { title } = Astro.props;
 <style is:global>
   :root {
     --accent-gradient: linear-gradient(
-    to right,
-    rgba(20,30,48,1) 10%,
-    rgba(36,59,85,1) 84%
+      to right,
+      rgba(20, 30, 48, 1) 10%,
+      rgba(36, 59, 85, 1) 84%
     );
   }
   html {
@@ -51,3 +51,4 @@ const { title } = Astro.props;
       monospace;
   }
 </style>
+
